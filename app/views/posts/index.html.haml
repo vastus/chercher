@@ -1,0 +1,6 @@
+#posts
+  %p.info Displaying #{pluralize(@posts.count, "post")}
+  - @posts.each do |post|
+    .post
+      %h3.title= link_to post.title, post
+      %p.content= post.content

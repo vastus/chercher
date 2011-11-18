@@ -1,0 +1,70 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  font: normal 100% helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: georgia, serif;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.15em; }
+
+#header {
+  padding: 1em;
+  position: relative;
+  background: #1e1e1e;
+
+  h1 {
+    color: #c0c0c0;
+    font-style: italic;
+  }
+}
+
+#search_box {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+  input[type=text] {
+    color: #333333;
+    padding: .5em;
+    font-family: georgia, serif;
+  }
+
+  input[type=submit] {
+    display: none;
+  }
+}
+
+#page {
+  max-width: 64em;
+  margin: 0 auto;
+}
+
+#posts {
+  .info {
+    text-align: right;
+    font-style: italic;
+  }
+  
+  .post {
+    margin: 1em 0 2em 0;
+    border-bottom: 1px solid #ddd;
+
+    .title {
+      margin: 1em 0 .5em 0;
+    }
+
+    .content {
+      text-align: justify;
+    }
+  }
+}
